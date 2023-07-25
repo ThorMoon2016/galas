@@ -15,14 +15,14 @@
         <div class="container">
             <div class="navbar">
                 <div class="logo">
-                  <a href="index.html"><img src="images/vitality.png" width="135px"></a>
+                  <a href="index.html"><img src="images/chatime-healthtea-logo-design-by-songpe-removebg-preview.png" width="185px"></a>
                 </div>
                 <nav>
                   <ul id="MenuItems" class="nav">
                       <li><a href="index.html">Pocetna</a></li>
                       <li><a href="PROIZVODI.html">Proizvodi</a></li>
-                      <li><a href="">O nama</a></li>
-                      <li><a href="">Kontakt</a></li>
+                      <li><a href="PROIZVODI.html">O nama</a></li>
+                      <li><a href="PROIZVODI.html">Kontakt</a></li>
                   </ul>
                 </nav>
                 <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
@@ -128,16 +128,19 @@
         <p50>&copy; 2023 Copyright. Sva prava zadržana.</p>
     </footer>
 
-    <!---------js for toggle menu------->
     <script>
         var MenuItems = document.getElementById("MenuItems");
+        var menuIcon = document.querySelector(".menu-icon");
+
         MenuItems.style.maxHeight = "0px";
 
         function menutoggle() {
             if (MenuItems.style.maxHeight == "0px") {
                 MenuItems.style.maxHeight = "200px";
+                menuIcon.classList.add("open"); // Dodajte klasu za otvoreni izbornik
             } else {
                 MenuItems.style.maxHeight = "0px";
+                menuIcon.classList.remove("open"); // Uklonite klasu za zatvoreni izbornik
             }
         }
     </script>
