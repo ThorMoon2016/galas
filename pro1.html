@@ -151,9 +151,9 @@
           
           
           <div id="customer-details-container">
-            <h2>Narucite jos danas</h2>
+            <h2>Naručite još danas</h2>
             <div class="product-details">
-              <h3>Galas caj</h3>
+              <h3>Galas čaj</h3>
               <img src="images/c1.png" alt="Proizvod" />
               <div class="price-details">
                 <div class="crossed-price">100 KM</div>
@@ -161,22 +161,26 @@
               </div>
               <div class="last-12-box"> <!-- Dodani crveni box -->
                 Posljednjih 12 komada
+              </div>
             </div>
-            </div>
-            <div class="input-box">
-              <input type="text" id="name" placeholder="Unesite ime">
-            </div>
-            <div class="input-box">
-              <input type="text" id="phone" placeholder="Unesite broj telefona">
-            </div>
-            <div class="input-box">
-              <input type="text" id="address" placeholder="Unesite adresu">
-            </div>
-            <p>Besplatna dostava u roku 24/48 sati - Plaćanje pouzećem</p> <!-- Dodani tekst -->
-            <div class="start-order-box">
-              <p2>NARUČI</p2>
-            </div>
+            <form action="https://formspree.io/f/mjvqkzbv" method="POST"> <!-- Zamijenite "mjvqkzbv" s vašim Formspree endpointom -->
+              <div class="input-box">
+                <input type="text" name="Ime" placeholder="Unesite ime"> <!-- Dodali smo atribut "name" kako bismo identificirali polje u formi -->
+              </div>
+              <div class="input-box">
+                <input type="text" name="Telefon" placeholder="Unesite broj telefona"> <!-- Dodali smo atribut "name" kako bismo identificirali polje u formi -->
+              </div>
+              <div class="input-box">
+                <input type="text" name="Adresa" placeholder="Unesite adresu"> <!-- Dodali smo atribut "name" kako bismo identificirali polje u formi -->
+              </div>
+              <p>Besplatna dostava u roku 24/48 sati - Plaćanje pouzećem</p>
+              <div class="input-box">
+                <!-- Ovdje dodajemo stil koji ste naveli na button element -->
+                <button type="submit" class="start-order-box" style="width: 100px; height: 100px; background-color: rgb(53, 221, 67); color: black; text-align: center; line-height: 100px; border-radius: 50%; font-size: 20px; margin: 10px auto;">NARUČI</button>
+              </div>
+            </form>
           </div>
+          
  
 </div>
 
