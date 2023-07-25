@@ -67,7 +67,7 @@ p{
 .col-2 h1{
     font-size: 50px;
     line-height: 60px;
-    margin: 15px 0;
+    margin: 1px 0;
     margin-bottom: 100px;
 }
 .btn{
@@ -129,6 +129,7 @@ p{
     box-sizing: border-box;
     padding: 5px;
     margin-left: -35px; /* Poništite lijevi margin kako bismo započeli s početne točke */
+    margin-top: 20px;
   }
 
   .col-4 img {
@@ -345,10 +346,13 @@ h5{
 }
 
 .menu-icon{
-    width: 28px;
+    width: 20px;
     margin-left: 20px;
     display: none;
 }
+
+
+
 /*---------footer-------*/
 
 footer {
@@ -388,6 +392,7 @@ footer {
     .menu-icon{
         display: block;
         cursor: pointer;
+        margin-top: 12px;
     }
 }
 /*--------- all products page ------*/
