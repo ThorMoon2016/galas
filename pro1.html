@@ -165,13 +165,13 @@
             </div>
             <form action="https://formspree.io/f/mjvqkzbv" method="POST"> <!-- Zamijenite "mjvqkzbv" s vašim Formspree endpointom -->
               <div class="input-box">
-                <input type="text" name="Ime" placeholder="Unesite ime"> <!-- Dodali smo atribut "name" kako bismo identificirali polje u formi -->
+                <input type="text" name="Ime" id="name-input" placeholder="Unesite ime" required>
               </div>
               <div class="input-box">
-                <input type="text" name="Telefon" placeholder="Unesite broj telefona"> <!-- Dodali smo atribut "name" kako bismo identificirali polje u formi -->
+                <input type="tel" name="Telefon" id="phone-input" placeholder="Unesite broj telefona" required>
               </div>
               <div class="input-box">
-                <input type="text" name="Adresa" placeholder="Unesite adresu"> <!-- Dodali smo atribut "name" kako bismo identificirali polje u formi -->
+                <input type="text" name="Adresa" placeholder="Unesite adresu" required>
               </div>
               <p>Besplatna dostava u roku 24/48 sati - Plaćanje pouzećem</p>
               <div class="input-box">
@@ -180,6 +180,23 @@
               </div>
             </form>
           </div>
+          
+          <script>
+            // Kod za omogućavanje unosa samo slova u polje "Ime"
+            const nameInput = document.getElementById('name-input');
+          
+            nameInput.addEventListener('input', function () {
+              this.value = this.value.replace(/[^A-Za-zćčđšžĆČĐŠŽ ]/g, ''); // Uklanja sve znakove osim slova
+            });
+          
+            // Kod za omogućavanje unosa samo brojeva u polje "Telefon"
+            const phoneInput = document.getElementById('phone-input');
+          
+            phoneInput.addEventListener('input', function () {
+              this.value = this.value.replace(/[^0-9]/g, ''); // Uklanja sve znakove osim brojeva
+            });
+          </script>
+          
           
  
 </div>
