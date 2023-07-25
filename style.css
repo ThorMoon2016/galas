@@ -866,7 +866,7 @@ form a{
   }
   
   .input-box:not(:last-child) {
-    margin-bottom: 20px;
+    margin-bottom: 0;
   }
   
 /* POMJERANJE HEADER PREMA GORE*/
