@@ -366,6 +366,13 @@ footer {
     text-align: center;
   }
   
+/* Dodajte bijelu boju i podvlaku na link u footeru */
+footer a {
+  color: white;
+  text-decoration: underline;
+}
+
+  
 
 /*--------- ZA 3 LINIJE SA STRANE ZA MOB MENI media query for menu -------*/
 
@@ -373,10 +380,10 @@ footer {
 
     nav ul{
         position: absolute;
-        top: 70px;
-        left: 0;
-        background: #333;
-        width: 100%;
+        top: 75px;
+        left: 30;
+        background: #b1b0b0;
+        width: 28%;
         overflow: hidden;
         transition: max-height 0.5;
     }
